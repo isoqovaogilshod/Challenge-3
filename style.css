@@ -192,6 +192,7 @@ button:hover {
   .card-global{
     display: flex;
     flex-direction: row;
+    margin-top: 180px;
   }
   .purple-part{
     width: 360px;
