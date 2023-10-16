@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  font-family: HankenGrotesk;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.card-global {
+  max-height: 105vh;
+  place-items: center;
+  margin-top: 50px;
+  background-color: #FFFFFF;
+}
+.purple-part {
+  max-width: 460px;
+  border-radius: 0px 0px 30px 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(180deg, #6643ff 0%, #312cea 100%);
+}
+
+.purple-part h5 {
+  color: #cec6ff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 120px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #5840c3 0%, #302ddc 100%);
+  margin-top: 20px;
+  font-size: 16px;
+  color: #857cf3;
+}
+
+.circle span {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1;
+}
+.purple-part h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 27px;
+}
+
+.purple-part h4 {
+  max-width: 210px;
+  color: #c0c1ff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.425px;
+}
+
+.white-part {
+  padding: 16px;
+}
+.white-part h2 {
+  color: #323d58;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.white-part .summary {
+  margin-top: 10px;
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+}
+.summary .summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.summary .summary-item span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.summary .summary-item p{
+  color: #969198;
+  
+}
+
+.summary-item:first-child {
+  background-color: #fff6f5;
+}
+
+.summary-item:first-child h3 {
+  color: #e1676d;
+}
+
+.summary-item:nth-child(2) {
+  background-color: #fffbf2;
+}
+.summary-item:nth-child(2) h3 {
+  color: #ddbb64;
+}
+.summary-item:nth-child(3) {
+  background-color: #f2fbfa;
+}
+.summary-item:nth-child(3) h3 {
+  color: #2ca989;
+}
+.summary-item:nth-child(4) {
+  background-color: #f3f3fd;
+}
+
+.summary-item:nth-child(4) h3 {
+  color: #3742ce;
+}
+.summary .icon-text {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+button {
+  color: #fff;
+  line-height: 1;
+  padding: 16px 32px;
+  border: 0;
+  font-weight: 700;
+  border-radius: 41px;
+  background: #303b59;
+  cursor: pointer;
+  width: 300px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #6543ff 0%, #0401ff 100%);
+}
+
+@media screen  and (min-width:600px){
+  .container{
+    max-width: 738px;
+  }
+  .card-global{
+    display: flex;
+    flex-direction: row;
+  }
+  .purple-part{
+    width: 360px;
+    height: 470px;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .purple-part h5{
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .circle{
+    width: 180px;
+    margin-top: 30px;
+  }
+  .circle span{
+    font-size: 70px;
+  }
+
+  .purple-part h3{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .purple-part h4{
+    font-size: 19px;
+    max-width: 250px;
+  }
+  .white-part{
+   background-color: white;
+   border-radius: 30px;
+   padding-left: 39px;
+   height: 470px;
+  }
+  
+  .white-part h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  button{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .white-part h2{
+    margin-top: 10px;
+  }
+  .summary .summary-item span,p{
+    font-size: 18px;
+  }
+  
+  .white-part .summary{
+    
+    row-gap: 8px;
+  }
+
+}
